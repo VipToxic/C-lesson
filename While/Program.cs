@@ -45,7 +45,7 @@
                 }
                 else
                 {
-                    Console.WriteLine("Введите коректные данные!!!");
+                    Console.WriteLine("Введите коректные данные!!");
                 }
 
             }
