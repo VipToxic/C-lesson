@@ -7,7 +7,7 @@
          */
         static void Main(string[] args)
         {
-            /*
+            
             while (true)
             {
                 int count = 0;
@@ -45,11 +45,11 @@
                 }
                 else
                 {
-                    Console.WriteLine("Введите коректные данные!!!");
+                    Console.WriteLine("Введите коректные данные!");
                 }
 
             }
-            */
+            
 
             for (int i = 1; i < 10000; i++)
             {
