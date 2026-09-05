@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="C# урок/C# урок.csproj" />
+  <Project Path="gitlesson/gitlesson.csproj" Id="1f71dea7-5b19-40e6-84c1-23908fc1de6f" />
+  <Project Path="While/While.csproj" Id="4f262127-aef1-4ee9-9537-c7eccdd55571" />
+</Solution>
