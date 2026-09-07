@@ -4,11 +4,16 @@
     {
         static void Main(string[] args)
         {
-            
-            foreach(char c in "Tom")
+            int count = 5;
+            do
             {
-                Console.WriteLine(c);
+                count--;
+
+                Console.WriteLine(count);
+                count++;
+               
             }
+            while (count != 5);
         }
     }
 }
