@@ -26,6 +26,8 @@
                 {
                     coun = (end_rangeT - rangeT) + 1; // подсчет количиства чисел
                     sum = ((rangeT + end_rangeT) * coun) / 2; // подсчет суммы по формуле
+                    double oddSum = 0;
+                    double evenSum = 0;
 
                     // тут проверка чисел тоесть их правильный порядок
                     if (end_rangeT < rangeT)
@@ -45,10 +47,12 @@
                         if (rangeT % 2 == 0)
                         {
                             count++; //  если четный + четная число
+                            oddSum = oddSum + rangeT;
                         }
                         else
                         {
                             count2++; // если нет то + не четная число
+                            evenSum = evenSum + rangeT;
                         }
 
                         // После чего плюсуем к начальному числу + 1
@@ -62,10 +66,11 @@
                     Console.WriteLine("\nКоличество четных чисел: " + count);
                     Console.WriteLine("Количество нечетных чисел: " + count2);
                     Console.WriteLine("Сумма чисел равен к " + sum);
+                    Console.WriteLine("Сумма четных чисел: " + oddSum);
+                    Console.WriteLine("Сумма нечетных чисел: " + evenSum);
                 }
                 else
                 {
-                    // если вводимые данные не коректные то выводиться это сообщения
                     // если вводимые данные не коректные то выводиться это сообщения
                     Console.WriteLine("Введите коректные данные!");
                 }
