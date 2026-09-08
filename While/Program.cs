@@ -7,9 +7,11 @@
          */
         static void Main(string[] args)
         {
-            
+
+            // для того чтобы не заканчивался итерация
             while (true)
             {
+                // обьявление переменных и запрос на ввод чисел
                 int count = 0;
                 int count2 = 0;
                 double sum;
@@ -19,10 +21,13 @@
                 Console.Write("Введите конец диапазоно: ");
                 string end_range = Console.ReadLine();
 
+                // Конвертация чисел
                 if (double.TryParse(range, out double rangeT) && double.TryParse(end_range, out double end_rangeT))
                 {
-                    coun = (end_rangeT - rangeT) + 1;
-                    sum = ((rangeT + end_rangeT) * coun) / 2;
+                    coun = (end_rangeT - rangeT) + 1; // подсчет количиства чисел
+                    sum = ((rangeT + end_rangeT) * coun) / 2; // подсчет суммы по формуле
+
+                    // тут проверка чисел тоесть их правильный порядок
                     if (end_rangeT < rangeT)
                     {
                         Console.WriteLine("Конечная число не может быть меньше начальной");
@@ -30,28 +35,38 @@
                         break;
                     }
 
+                    // Сам процесс подсчета
                     while (rangeT <= end_rangeT)
                     {
-                        
+                        // С начала выводим число что у нас есть
                         Console.Write(rangeT + " ");
+
+                        // Проверяем на четность
                         if (rangeT % 2 == 0)
                         {
-                            count++;
+                            count++; //  если четный + четная число
                         }
                         else
                         {
-                            count2++;
+                            count2++; // если нет то + не четная число
                         }
+
+                        // После чего плюсуем к начальному числу + 1
+                        // чтобы проверить следуюшее число в диапазоне
                         rangeT++;
                         
                         
                     }
+
+                    // Вывод полученых данных
                     Console.WriteLine("\nКоличество четных чисел: " + count);
                     Console.WriteLine("Количество нечетных чисел: " + count2);
                     Console.WriteLine("Сумма чисел равен к " + sum);
                 }
                 else
                 {
+                    // если вводимые данные не коректные то выводиться это сообщения
+                    // если вводимые данные не коректные то выводиться это сообщения
                     Console.WriteLine("Введите коректные данные!");
                 }
 
