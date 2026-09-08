@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int lim = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i <= lim; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
