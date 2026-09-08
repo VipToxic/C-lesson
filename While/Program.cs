@@ -12,6 +12,8 @@
             {
                 int count = 0;
                 int count2 = 0;
+                double sum;
+                double coun;
                 Console.Write("Введите начало диапазоно: ");
                 string range = Console.ReadLine();
                 Console.Write("Введите конец диапазоно: ");
@@ -19,6 +21,8 @@
 
                 if (double.TryParse(range, out double rangeT) && double.TryParse(end_range, out double end_rangeT))
                 {
+                    coun = (end_rangeT - rangeT) + 1;
+                    sum = ((rangeT + end_rangeT) * coun) / 2;
                     if (end_rangeT < rangeT)
                     {
                         Console.WriteLine("Конечная число не может быть меньше начальной");
@@ -28,7 +32,7 @@
 
                     while (rangeT <= end_rangeT)
                     {
-
+                        
                         Console.Write(rangeT + " ");
                         if (rangeT % 2 == 0)
                         {
@@ -39,9 +43,12 @@
                             count2++;
                         }
                         rangeT++;
+                        
+                        
                     }
                     Console.WriteLine("\nКоличество четных чисел: " + count);
                     Console.WriteLine("Количество нечетных чисел: " + count2);
+                    Console.WriteLine("Сумма чисел равен к " + sum);
                 }
                 else
                 {
