@@ -4,22 +4,19 @@
     {
         static void Main(string[] args)
         {
-            /*
-            int lim = int.Parse(Console.ReadLine());
+            double x = 3; // 9
+            double s = 0; // 4
 
-            for (int i = 0; i <= lim; i++)
+            while (x < 20)
             {
-                Console.WriteLine(i);
+                x += 2;
+                if (x % 5 == 0)
+                {
+                    continue;
+                }
+                s += x % 4;
             }
-            */
-
-            for (;;)
-            {
-                Console.WriteLine("Вот так вот");
-                System.Threading.Thread.Sleep(300);
-            }
-
-            Console.ReadLine();
+            Console.WriteLine(s);
         }
     }
 }
