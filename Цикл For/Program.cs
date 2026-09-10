@@ -4,19 +4,46 @@
     {
         static void Main(string[] args)
         {
-            double x = 3; // 9
-            double s = 0; // 4
-
-            while (x < 20)
+            // Подсчет суммы от 1 до 10
+            int sum = 0;
+            for (int i = 1; i <= 10; i++)
             {
-                x += 2;
-                if (x % 5 == 0)
-                {
-                    continue;
-                }
-                s += x % 4;
+                sum += i;
+                Console.WriteLine(i);
             }
-            Console.WriteLine(s);
+            Console.WriteLine("Сумма: " + sum);
+
+            // узнать четное или не четное
+            for (int i = 1; i <= 20; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine($"Значение {i} четное");
+                }
+                else
+                {
+                    Console.WriteLine($"Значение {i} нечетное");
+                }
+            }
+
+            // Сколько не четных и четных
+
+            int even = 0;
+            int odd = 0;
+            for (int i = 1; i <= 30; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    even++;
+                }
+                else
+                {
+                    odd++;
+                }
+            }
+            Console.WriteLine($"Четных чисел: {even}");
+            Console.WriteLine($"Не четных чисел: {odd}");
+
         }
     }
 }
