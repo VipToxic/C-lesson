@@ -45,19 +45,19 @@
             Console.WriteLine($"Четных чисел: {even}");
             Console.WriteLine($"Не четных чисел: {odd}");
 
-            /*
+           
             // обратный цикл
             int i10 = int.Parse(Console.ReadLine());
             for (; i10 >= 0; i10--)
             {
                 Console.WriteLine(i10);
             }
-            */
+            
             // Ключевое слово break
             Console.Write("Введите число для поиска от 1 до 100: ");
             int a = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i < 100; i++)
+            for (int i = 1; i < 101; i++)
             {
                 if (i == a)
                 {
@@ -68,6 +68,16 @@
                 {
                     Console.WriteLine(i);
                 }
+
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == 6)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
             }
         }
     }
