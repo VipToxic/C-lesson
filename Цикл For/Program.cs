@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            
             // Подсчет суммы от 1 до 10
             int sum = 0;
             for (int i = 1; i <= 10; i++)
@@ -43,6 +44,14 @@
             }
             Console.WriteLine($"Четных чисел: {even}");
             Console.WriteLine($"Не четных чисел: {odd}");
+
+
+            // обратный цикл
+            int i10 = int.Parse(Console.ReadLine());
+            for (; i10 >= 0; i10--)
+            {
+                Console.WriteLine(i10);
+            }
 
         }
     }
