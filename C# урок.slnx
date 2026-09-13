@@ -4,6 +4,7 @@
   <Project Path="gitlesson/gitlesson.csproj" Id="1f71dea7-5b19-40e6-84c1-23908fc1de6f" />
   <Project Path="While/While.csproj" Id="4f262127-aef1-4ee9-9537-c7eccdd55571" />
   <Project Path="Вложенные циклы/Вложенные циклы.csproj" Id="74bd55ed-ba22-4cf6-ad93-428fb0bce58e" />
+  <Project Path="Курсор триугольник/Курсор триугольник.csproj" Id="40eb8858-a208-43a5-a1e6-43e8ce1a750a" />
   <Project Path="цикл for парктика/цикл for парктика.csproj" Id="c7a3cb88-faca-4323-baaa-b26a6a3ddabf" />
   <Project Path="Цикл For/Цикл For.csproj" Id="a1a7024d-a447-4008-975d-48983ba36145" />
 </Solution>
