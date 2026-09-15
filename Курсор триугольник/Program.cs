@@ -9,11 +9,11 @@
             Console.Write("Введите высоту: ");
             int height = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= height; i++)
+            for (int i = height; i >= 0; i--)
             {
-                for (int j = 1; j <= height - i; j++)
+                for (int j = height; j >= i; j--)
                 {
-                    Console.Write(" ");
+                    Console.Write("  ");
                 }
                 for (int j = 1; j <= i; j++)
                 {
@@ -22,6 +22,8 @@
                 Console.WriteLine();
             }
             
+
+            /*
             Console.WriteLine("------ВТОРОЙ МЕТОД------");
             Console.Write("Введите высоту: ");
             int height_1 = int.Parse(Console.ReadLine());
@@ -35,7 +37,7 @@
                 }
                 Console.WriteLine();
             }
-            
+            */
 
 
 
